@@ -1,0 +1,234 @@
+/*------COLORS------------
+#444
+#BDE4A7 ljusgrön
+#B3D2B2 lite mörkare grön
+#9FBBCC ljusblå
+*/
+/*-------------------HEADER------------------------------*/
+.header {
+  min-height:50px;
+  background-color:#BDE4A7;
+  line-height: 50px;
+}
+.header .logo {
+  font-family: 'Damion', cursive;
+  padding: 0 0 0 10px;
+  cmin-width:120px;
+  width:120px;
+  float:left;
+  font-size: 1.5em;
+}
+.header .logo a {
+  text-decoration:none;
+  color:#444;
+}
+.header .logo a:hover {
+  opacity: 0.8;
+}
+.nav {
+  display:none;
+  padding-right:30px;
+}
+.nav ul {
+  padding: 0;
+  margin:0;
+}
+.header ul li {
+  list-style:none;
+  display:inline-block;
+}
+.header ul li a{
+  text-decoration:none;
+  padding: 0 30px;
+  color:#444;
+}
+.header ul li a:hover {
+  opacity: 0.75;
+}
+.hamburgare {
+    color:#444;
+    font-size: 3em;
+    position: absolute;
+    top:0;
+    right: 5px;
+}
+.mini-menu {
+  position: fixed;
+  min-height: 100px;
+  right:0;
+  top: 45px;
+  background-color: #444;
+  color:antiquewhite;
+  width: 15em;
+  text-align: center;
+  font-size: 1em;
+  box-shadow: -2px 2px 9px lightgrey;
+  display: none;
+}
+.mini-menu-show {
+  right:0;
+}
+.mini-menu ul{
+ padding:0; 
+ margin:0;
+}
+.mini-menu ul li {
+  border-bottom: 1px solid rgba(15,15,15,0.35);
+  display:block;
+}
+.mini-menu ul li a {
+  cdisplay:block;
+  text-decoration: none;
+  color:antiquewhite;
+}
+
+/*-------------------CONTENT------------------------------*/
+.content {
+  background-color:white;
+  padding-top: 20px;
+}
+/*-------------------LEFT------------------------------*/
+.left {
+  text-align:center;
+  min-height:200px;
+  padding-bottom:30px;
+}
+.left ul {
+  padding:0;
+  margin:0;
+}
+.left li {
+  list-style:none;
+}
+/*-------------------MIDDLE------------------------------*/
+.middle{
+  text-align:center;
+}
+.middle .bild-wrapper {
+  font-size:0.5em;
+}
+.middle .bild {
+  box-sizing: border-box;
+}
+.middle .bild img {
+  box-sizing: border-box;
+}
+.middle .produktnamn {
+  text-align:center;
+  padding: 5px 0 15px 0;
+} 
+@media screen and (min-width: 550px) {
+  .hamburgare {
+      display: none;
+  }
+  .nav {
+    display:block;
+    float:right;
+  }
+  .left {
+    float:left;
+    width: 30%;
+    padding-left:10px;
+    box-sizing: border-box;
+  }
+  .middle {
+    box-sizing: border-box;
+    width:70%;
+    float:right;
+  }
+  .middle .bild-wrapper {
+    width:50%;
+    float:left;
+  }
+  .middle .bild-wrapper {
+    box-sizing: border-box;
+    height:35em;
+    font-size:0.5em;
+    position:relative;
+    overflow:hidden;
+  }
+  .middle .produktnamn {
+    position:absolute;
+    bottom: 2em;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #444;
+    border-left:2px solid white;
+    color: #fff;
+    padding: 5px;
+  } 
+  
+}
+@media screen and (min-width: 700px) {
+    .middle .bild-wrapper {
+      width:33%;
+    }
+}
+@media screen and (min-width: 1200px) {
+  .left {
+    width: 20%;
+  }
+  .middle {
+    width:80%;
+  }
+  .middle .bild-wrapper {
+    width:25%;
+  }
+}
+/*-------------------FOOTER------------------------------*/
+.footer {
+  min-height:40px;
+  background-color:#BDE4A7;
+}
+/*--------------social-block-------------------*/
+.social-block {
+    text-align: center;
+    padding: 10px 0;
+}
+.social-item {
+    display: inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    xborder: 1px solid;
+    xborder-radius: 50%;
+    xpadding:20px;
+    opacity: 1;
+}
+.social-item:hover {
+    opacity: .7;
+}
+.social-item .icon {
+    font-size: 20px
+}
+.facebook-color {
+    color: #3b5998;
+}
+.twitter-color {
+    color: #55acee;
+}
+.instagram-color {
+    color: #3f729b;
+}
+
+/*----------HELPERS----------*/
+.float {
+  float:left;
+}
+.clearboth {
+  clear:both;
+}
+.center {
+  text-align: center;
+}
+.center-element {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
